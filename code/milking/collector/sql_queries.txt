@@ -1,0 +1,15 @@
+How many campaigns are detected by GSB:
+    select d.campaign, count(distinct g.domain) from domains_seen d, slds s, gsb g where d.domain = s.domain and s.sld = g.domain and g.last_flag = true group by d.campaign; 
+    select d.campaign, count(distinct g.domain) from domains_seen d, slds s, gsb g where d.domain = s.domain and s.sld = g.domain group by d.campaign; 
+    select count(distinct g.domain) from domains_seen d, slds s, gsb g where d.domain = s.domain and s.sld = g.domain and g.first_flag is true and d.campaign like 'flash%';
+
+    select count(*) from gsb;
+    select count(*) from gsb where first_flag is true;
+    select domain, last_query_time - first_query_time as diff from gsb where first_flag is false and last_flag is true order by diff desc;
+    select avg(last_query_time - first_query_time) as diff from gsb where first_flag is false and last_flag is true order by diff desc;
+
+    This doesn't work on the current version of pgsql:
+    select percentile_disc(0.5) WITHIN GROUP (ORDER BY diff) FROM (
+        SELECT last_query_time - first_query_time as diff from gsb where first_flag is false
+        and last_flag is true order by diff desc);
+

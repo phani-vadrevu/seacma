@@ -1,0 +1,25 @@
+<html>
+    Script that tells where a click is happening
+    <header>
+        <button type="button" id="myBtn" onclick="myFunction()">Try it</button>
+        <script type="text/javascript">
+            function printMousePos(event) {
+                  document.getElementById("box").innerHTML =
+                      "clientX: " + event.clientX +
+                      " - clientY: " + event.clientY;
+            }
+
+            document.addEventListener("click", printMousePos);
+
+            function myFunction() {
+                    var x = document.getElementById("myBtn");
+                        x.disabled = true;
+            }
+        </script>
+    </header>
+    <body>
+        <img src="foo.png" alt="Sample Image" id="sample_img" style="width:500px;height:300px;">
+        <p id="box">
+        </p>
+    </body>
+</html>
