@@ -1,6 +1,7 @@
 # seacma
 
-This project contains code and data as described in our paper:
+This project contains code and data as described in our
+[paper](http://www.phanivadrevu.com/files/papers/seacma.pdf):
 
 > What You See is NOT What You Get: Discovering and Tracking Ad-Driven Social Engineering Attack Campaigns  
 > Phani Vadrevu (University of New Orleans), Roberto Perdisci (University of Georgia)  
