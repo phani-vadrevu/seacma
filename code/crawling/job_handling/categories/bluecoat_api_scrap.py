@@ -70,8 +70,8 @@ def main(url):
     s = SiteReview()
     response = s.sitereview(url)
     resp = s.check_response(response)
-    print url
-    print resp
+    # print url
+    # print resp
 
 
 

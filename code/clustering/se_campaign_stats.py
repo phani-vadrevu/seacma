@@ -221,22 +221,6 @@ def main():
     print "# of total SE attacks:", total_attacks
     # get_category_stats(all_home_domains)
     get_popularity_stats(all_home_domains)
-    # while True:
-        # slds = dbo.get_gsb_queryable_slds()
-        # query_time = datetime.now()
-        # print "GSB Update time:", str(query_time)
-        # run_sync(sbl)
-        # print "Got updated GSB list. Now looking up %s domains: %s" % (
-                    # len(slds), str(datetime.now()))
-        # for d in slds:
-            # try:
-                # result = sbl.lookup_url(d)
-                # result = "%s" % (result,)
-                # dbo.update_gsb_table(d, result, query_time)
-            # except Exception as e:
-                # print "Exception. Skipping this domain: ", d, e
-            # #print result
-        # print "Done inserting into DB. Will update GSB list again", str(datetime.now())
 
 if __name__ == '__main__':
     main()
