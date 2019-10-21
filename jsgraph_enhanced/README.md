@@ -1,12 +1,12 @@
 This is an enhanced version of the JSgraph code as described in the paper:
-> Bo Li, Phani Vadrevu, Kyu Hyung Lee, Roberto Perdisci. 
-> "JSgraph: Enabling Reconstruction of Web Attacks via Efficient Tracking of Live In-Browser JavaScript Executions".
+> Bo Li, Phani Vadrevu, Kyu Hyung Lee, Roberto Perdisci.  
+> "JSgraph: Enabling Reconstruction of Web Attacks via Efficient Tracking of Live In-Browser JavaScript Executions".  
 > Network and Distributed System Security Symposium, NDSS 2018
 
 ## Code compilation instructions:
 Follow the steps from building chromium for [Linux](https://chromium.googlesource.com/chromium/src/+/lkcr/docs/linux_build_instructions.md)  until ‘gclient runhooks’. After running ‘gclient runhooks’ follow the instructions below.
 
-### Steps*
+### Steps
 
 Clone the repo of depot_tool.
     
