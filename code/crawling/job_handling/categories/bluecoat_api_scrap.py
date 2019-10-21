@@ -22,7 +22,7 @@ import sys
 
 class SiteReview(object):
     def __init__(self):
-        self.baseurl = "https://api.scraperapi.com/?key=c463f80f8d4ba63b8888719fe255e7c3&url=https://sitereview.bluecoat.com/resource/lookup"
+        self.baseurl = ""
         self.headers = {"User-Agent": "Mozilla/5.0", "Content-Type": "application/json"}
 
     def sitereview(self, url):

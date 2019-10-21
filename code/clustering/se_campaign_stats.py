@@ -36,7 +36,7 @@ import ad_object
 print "# of SE clusters:",  sum([len(x) for x in se_categories.values()])
 # sys.exit()
 
-gsb_key = 'AIzaSyC39LDvnQYaJOXoMXGpk5smfDll4-XFHq8'
+gsb_key = ''
 # gsb_db_path = '/home/phani/se-hunter/milking/gsb_vt/gsb_v4.db'
 gsb_db_path = 'gsb_v4.db'
 CLUSTERED_ADOBJECTS_PATH = "/home/phani/se_hunter_results/clustered_ad_objects_v4.json"
